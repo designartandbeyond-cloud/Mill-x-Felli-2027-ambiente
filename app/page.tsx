@@ -13,7 +13,7 @@ const trends = [
   },
   {
     n: "03",
-    title: "Slow Rituals",
+    title: "Slow Rituals緩慢的儀式",
     body: "Objects that dignify small daily pauses: the second coffee, the evening bath, the unhurried table. A quiet counterweight to always-on living.",
   },
   {
