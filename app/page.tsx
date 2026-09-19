@@ -8,7 +8,7 @@ const trends = [
   },
   {
     n: "02",
-    title: "Circular by Design循環設計",
+    title: "Circular by Design循環導向設計",
     body: "Modular, repairable, mono-material objects built to be disassembled and rehomed rather than replaced — designed for a market that now asks where things go next.",
   },
   {
