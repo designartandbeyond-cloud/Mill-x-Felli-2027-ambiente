@@ -3,12 +3,12 @@ import MarketExplorer from "./components/MarketExplorer";
 const trends = [
   {
     n: "01",
-    title: "Quiet Materials",
+    title: "QuietMaterials安靜的材料 ",
     body: "A retreat from gloss and ornament toward tactile honesty — matte stoneware, raw linen, unlacquered wood. Surfaces that age visibly, and are better for it.",
   },
   {
     n: "02",
-    title: "Circular by Design",
+    title: "Circular by Design循環設計",
     body: "Modular, repairable, mono-material objects built to be disassembled and rehomed rather than replaced — designed for a market that now asks where things go next.",
   },
   {
@@ -18,7 +18,7 @@ const trends = [
   },
   {
     n: "04",
-    title: "New Nordic Warmth",
+    title: "New Nordic Warmth新暖調北歐",
     body: "Scandinavian restraint, reheated — terracotta, ochre and walnut softening minimalism without abandoning it. Warmth as the new discipline.",
   },
 ];
