@@ -3,23 +3,23 @@ import MarketExplorer from "./components/MarketExplorer";
 const trends = [
   {
     n: "01",
-    title: "QuietMaterials安靜的材料 ",
-    body: "A retreat from gloss and ornament toward tactile honesty — matte stoneware, raw linen, unlacquered wood. Surfaces that age visibly, and are better for it.",
+    title: "Healthy Convenience",
+    body: "Buyers everywhere want nutritious meals without the friction — portioned, ready-to-go solutions that fit into busier daily life instead of asking people to plan around it.",
   },
   {
     n: "02",
-    title: "Circular by Design循環導向設計",
-    body: "Modular, repairable, mono-material objects built to be disassembled and rehomed rather than replaced — designed for a market that now asks where things go next.",
+    title: "Food Life Extension",
+    body: "Rising grocery costs and growing food-waste awareness are pushing households across every market toward smarter storage that keeps food fresher for longer.",
   },
   {
     n: "03",
-    title: "Slow Rituals緩慢的儀式",
-    body: "Objects that dignify small daily pauses: the second coffee, the evening bath, the unhurried table. A quiet counterweight to always-on living.",
+    title: "Climate-Adaptive Living",
+    body: "From humid coastlines to dry mountain air, how people hydrate and store food needs to adapt to local climate — not assume one condition fits all.",
   },
   {
     n: "04",
-    title: "New Nordic Warmth新暖調北歐",
-    body: "Scandinavian restraint, reheated — terracotta, ochre and walnut softening minimalism without abandoning it. Warmth as the new discipline.",
+    title: "Design That Travels",
+    body: "The best daily objects now need to work in a small city apartment and a family kitchen alike — modular, durable design built to adapt, not to assume.",
   },
 ];
 
@@ -37,7 +37,7 @@ const proposals = [
     name: "LOOP",
     swatch: "#B7A588",
     desc: "A mono-material beech shelving system that assembles without tools — and fully disassembles at end of life.",
-    material: "European beech",
+    material: "Sustainably sourced beech",
     trend: "Circular by Design",
   },
   {
@@ -60,8 +60,8 @@ const proposals = [
     category: "Giving",
     name: "FIELD",
     swatch: "#CBB89A",
-    desc: "Undyed European flax linen throws and napkins, garment-washed for softness straight out of the box.",
-    material: "100% European flax linen",
+    desc: "Undyed natural flax linen throws and napkins, garment-washed for softness straight out of the box.",
+    material: "100% natural flax linen",
     trend: "Quiet Materials",
   },
   {
@@ -142,11 +142,11 @@ export default function Home() {
               keeps it.&rdquo;
             </p>
             <p className="mt-8 max-w-2xl text-[15px] leading-8 text-[#4A4944]">
-              Milla × Felli pairs traditional European craft with contemporary restraint. Our
-              work responds to how the continent actually lives now: smaller apartments,
-              multigenerational households, a growing discomfort with disposability, and a
-              quiet hunger for ritual. Every proposal in this collection starts from one of
-              those shifts.
+              Felli pairs everyday practicality with considered design. Our work responds to
+              how people actually live now — smaller homes, busier schedules, more meals eaten
+              on the move, and a growing expectation that daily objects should work harder and
+              last longer. Every proposal in this collection starts from one of those shifts,
+              adapted market by market for buyers around the world.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function Home() {
             Four Themes for 2027
           </p>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl sm:text-4xl">
-            Reading the room: European living in 2027
+            Reading the room: adaptive living in 2027
           </h2>
 
           <div className="mt-16 divide-y divide-black/10 border-t border-black/10">
@@ -184,7 +184,7 @@ export default function Home() {
             New for Ambiente 2027
           </p>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl sm:text-4xl">
-            Six proposals for the European market
+            Six proposals for buyers worldwide
           </h2>
 
           <div className="mt-16 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -224,8 +224,8 @@ export default function Home() {
             Select your target market
           </h2>
           <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#4A4944]">
-            Click a country to see the three lifestyle trends shaping it — and which of our
-            Ambiente 2027 proposals answers each one.
+            Click a country to open its market profile — the products, categories, and core
+            purchasing driver we&apos;re proposing for buyers in that region.
           </p>
 
           <div className="mt-16">
