@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { markets, marketBySlug } from "../../data/markets";
@@ -78,6 +79,24 @@ export default async function MarketPage(props: PageProps<"/markets/[slug]">) {
           </span>
           <span className="font-serif text-lg text-[#F5F3EE]">{market.coreDriver}</span>
         </div>
+
+        {market.productImage && (
+          <div className="mt-16">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#8B6F5C]">
+              Product Lineup
+            </p>
+            <div className="mt-5 overflow-hidden rounded-2xl border border-black/10">
+              <Image
+                src={market.productImage.src}
+                alt={`${market.name} product lineup: ${market.healthyConvenience}, ${market.foodLifeExtension}, ${market.climateAdaptive}`}
+                width={market.productImage.width}
+                height={market.productImage.height}
+                sizes="(min-width: 1024px) 896px, 100vw"
+                className="h-auto w-full"
+              />
+            </div>
+          </div>
+        )}
 
         <div className="mt-16">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#8B6F5C]">

@@ -16,6 +16,8 @@ export interface MarketProfile {
   foodLifeExtension: string;
   climateAdaptive: string;
   coreDriver: string;
+  /** Optional product sheet image for the market, shown on its profile page */
+  productImage?: { src: string; width: number; height: number };
 }
 
 export const markets: MarketProfile[] = [
@@ -28,6 +30,7 @@ export const markets: MarketProfile[] = [
     foodLifeExtension: "Fresh Stack",
     climateAdaptive: "Hydration Station",
     coreDriver: "Efficiency",
+    productImage: { src: "/products/germany.png", width: 2000, height: 1829 },
   },
   {
     slug: "uk",
@@ -38,6 +41,7 @@ export const markets: MarketProfile[] = [
     foodLifeExtension: "Leftover Keeper",
     climateAdaptive: "Cool Carry",
     coreDriver: "Value",
+    productImage: { src: "/products/uk.png", width: 2000, height: 1831 },
   },
   {
     slug: "france",
@@ -48,6 +52,7 @@ export const markets: MarketProfile[] = [
     foodLifeExtension: "Fresh Produce Keeper",
     climateAdaptive: "Infuse & Cool",
     coreDriver: "Freshness",
+    productImage: { src: "/products/france.png", width: 2000, height: 1834 },
   },
   {
     slug: "switzerland",
@@ -58,6 +63,7 @@ export const markets: MarketProfile[] = [
     foodLifeExtension: "Precision Fresh Box",
     climateAdaptive: "Hydration Precision",
     coreDriver: "Quality",
+    productImage: { src: "/products/switzerland.png", width: 2000, height: 1833 },
   },
   {
     slug: "usa",
@@ -68,6 +74,7 @@ export const markets: MarketProfile[] = [
     foodLifeExtension: "Fridge-to-Freezer",
     climateAdaptive: "Hydration Hub",
     coreDriver: "Convenience",
+    productImage: { src: "/products/usa.png", width: 2000, height: 1821 },
   },
   {
     slug: "canada",
@@ -78,6 +85,7 @@ export const markets: MarketProfile[] = [
     foodLifeExtension: "Harvest Keeper",
     climateAdaptive: "Climate Ready Hydration",
     coreDriver: "Resilience",
+    productImage: { src: "/products/canada.png", width: 2000, height: 1822 },
   },
 ];
 
