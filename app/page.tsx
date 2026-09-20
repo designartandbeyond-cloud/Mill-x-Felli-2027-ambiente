@@ -84,12 +84,12 @@ export default function Home() {
             Ambiente 2027 · Frankfurt am Main
           </p>
           <h1 className="mt-8 max-w-4xl font-serif text-[13vw] leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
-            European living,
+            Adaptive Living,
             <br />
-            <span className="text-[#8B6F5C]">reconsidered.</span>
+            <span className="text-[#8B6F5C]">Reconsidered.</span>
           </h1>
           <p className="mt-10 max-w-xl text-[15px] leading-8 text-[#4A4944] sm:text-base">
-            Milla × Felli is a design studio reading the shifts in how Europe lives — smaller
+            Felli reading the shifts in how Europe lives — smaller
             homes, slower rituals, circular expectations — and answering with objects. This is
             our proposal for Ambiente 2027.
           </p>
