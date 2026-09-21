@@ -55,7 +55,7 @@ export default function MarketExplorer() {
             href={`/markets/${m.slug}`}
             className="group flex flex-col items-center gap-2 rounded-2xl border border-black/10 bg-white/70 px-4 py-6 text-center transition hover:border-black/25 hover:bg-white"
           >
-            <span className="text-3xl">{m.flag}</span>
+            <span className={`fi fis fi-${m.flagCode} h-9 w-9 rounded-full shadow-sm`} />
             <span className="font-serif text-base text-[#17171A]">{m.name}</span>
             <span className="text-[11px] uppercase tracking-[0.2em] text-[#8B6F5C]">
               {m.coreDriver}

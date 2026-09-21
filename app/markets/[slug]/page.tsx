@@ -50,7 +50,7 @@ export default async function MarketPage(props: PageProps<"/markets/[slug]">) {
         </Link>
 
         <div className="mt-8 flex items-center gap-5">
-          <span className="text-5xl">{market.flag}</span>
+          <span className={`fi fis fi-${market.flagCode} h-14 w-14 rounded-full shadow-sm`} />
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.35em] text-[#8B6F5C]">
               Market Profile
@@ -111,7 +111,7 @@ export default async function MarketPage(props: PageProps<"/markets/[slug]">) {
                   href={`/markets/${m.slug}`}
                   className="flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm transition hover:border-black/25 hover:bg-white"
                 >
-                  <span>{m.flag}</span>
+                  <span className={`fi fis fi-${m.flagCode} h-4 w-4 rounded-full`} />
                   <span>{m.name}</span>
                 </Link>
               ))}

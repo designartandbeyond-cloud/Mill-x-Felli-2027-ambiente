@@ -58,36 +58,50 @@ export default async function ExhibitionZonePage(props: PageProps<"/exhibition/[
 
         {product ? (
           <>
-            <div className="mt-14 grid gap-6 sm:grid-cols-2">
-              <div className="overflow-hidden rounded-2xl border border-black/10">
-                <div className="relative aspect-[4/3] w-full bg-white">
-                  <Image
-                    src={product.heroRender.src}
-                    alt={`${zone.title} product render`}
-                    fill
-                    sizes="(min-width: 640px) 448px, 100vw"
-                    className="object-contain"
-                  />
+            <div className="mt-14">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#8B6F5C]">
+                    Variant {product.signature.letter}
+                  </p>
+                  <h2 className="mt-1 font-serif text-2xl">{product.signature.title}</h2>
                 </div>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-black/10">
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src={product.heroLifestyle.src}
-                    alt={`${zone.title} lifestyle scene`}
-                    fill
-                    sizes="(min-width: 640px) 448px, 100vw"
-                    className="object-cover"
-                  />
+
+              <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="relative aspect-[4/3] w-full bg-white">
+                    <Image
+                      src={product.signature.render.src}
+                      alt={`${product.signature.title} product render`}
+                      fill
+                      sizes="(min-width: 640px) 448px, 100vw"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={product.signature.lifestyle.src}
+                      alt={`${product.signature.title} lifestyle scene`}
+                      fill
+                      sizes="(min-width: 640px) 448px, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-[#4A4944]">
+                {product.signature.description}
+              </p>
             </div>
 
-            <p className="mt-8 max-w-2xl text-[15px] leading-8 text-[#4A4944]">{product.intro}</p>
+            <p className="mt-10 max-w-2xl text-[15px] leading-8 text-[#4A4944]">{product.intro}</p>
 
             <div className="mt-16">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#8B6F5C]">
-                Variants
+                More Variants
               </p>
               <div className="mt-6 grid gap-x-8 gap-y-14 sm:grid-cols-2">
                 {product.variants.map((variant) => (
@@ -99,11 +113,7 @@ export default async function ExhibitionZonePage(props: PageProps<"/exhibition/[
                           alt={`${variant.title} — Variant ${variant.letter}`}
                           fill
                           sizes="(min-width: 640px) 360px, 100vw"
-                          className={
-                            variant.status === "concept"
-                              ? "object-contain"
-                              : "object-cover transition duration-300 group-hover:scale-[1.03]"
-                          }
+                          className="object-cover transition duration-300 group-hover:scale-[1.03]"
                         />
                       </div>
                     </div>
@@ -135,7 +145,7 @@ export default async function ExhibitionZonePage(props: PageProps<"/exhibition/[
                 className="object-cover"
               />
             </div>
-            <p className="mt-6 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#8B6F5C]">
+            <p className="mt-6 font-serif text-3xl text-[#17171A] sm:text-4xl">
               Coming Soon
             </p>
             <p className="mt-3 max-w-md mx-auto text-[15px] leading-8 text-[#4A4944]">
@@ -143,7 +153,7 @@ export default async function ExhibitionZonePage(props: PageProps<"/exhibition/[
               Ambiente 2027 — or write to us for an early preview.
             </p>
             <a
-              href="mailto:studio@millafelli.com?subject=Ambiente%202027%20Zone%20Preview%20Request"
+              href="mailto:milla@felli-group.com?subject=Ambiente%202027%20Zone%20Preview%20Request"
               className="mt-6 inline-block rounded-full bg-[#17171A] px-8 py-3 text-sm font-medium tracking-wide text-[#F5F3EE] transition hover:bg-[#3A3935]"
             >
               Request a Preview

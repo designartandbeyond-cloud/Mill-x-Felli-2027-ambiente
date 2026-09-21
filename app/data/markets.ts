@@ -11,7 +11,8 @@ export interface MarketProfile {
   /** Country name as used by @react-map/world's cityColors/onSelect keys */
   mapName: string;
   name: string;
-  flag: string;
+  /** ISO 3166-1 alpha-2 code, lowercase, used with the flag-icons library */
+  flagCode: string;
   healthyConvenience: string;
   foodLifeExtension: string;
   climateAdaptive: string;
@@ -25,7 +26,7 @@ export const markets: MarketProfile[] = [
     slug: "germany",
     mapName: "Germany",
     name: "Germany",
-    flag: "🇩🇪",
+    flagCode: "de",
     healthyConvenience: "Protein Prep Box",
     foodLifeExtension: "Fresh Stack",
     climateAdaptive: "Hydration Station",
@@ -36,7 +37,7 @@ export const markets: MarketProfile[] = [
     slug: "uk",
     mapName: "United Kingdom",
     name: "United Kingdom",
-    flag: "🇬🇧",
+    flagCode: "gb",
     healthyConvenience: "Smart Leftover Bento",
     foodLifeExtension: "Leftover Keeper",
     climateAdaptive: "Cool Carry",
@@ -47,7 +48,7 @@ export const markets: MarketProfile[] = [
     slug: "france",
     mapName: "France",
     name: "France",
-    flag: "🇫🇷",
+    flagCode: "fr",
     healthyConvenience: "Fresh Lunch Duo",
     foodLifeExtension: "Fresh Produce Keeper",
     climateAdaptive: "Infuse & Cool",
@@ -58,7 +59,7 @@ export const markets: MarketProfile[] = [
     slug: "switzerland",
     mapName: "Switzerland",
     name: "Switzerland",
-    flag: "🇨🇭",
+    flagCode: "ch",
     healthyConvenience: "Modular Wellness Box",
     foodLifeExtension: "Precision Fresh Box",
     climateAdaptive: "Hydration Precision",
@@ -69,7 +70,7 @@ export const markets: MarketProfile[] = [
     slug: "usa",
     mapName: "United States",
     name: "USA",
-    flag: "🇺🇸",
+    flagCode: "us",
     healthyConvenience: "One-Day Meal Station",
     foodLifeExtension: "Fridge-to-Freezer",
     climateAdaptive: "Hydration Hub",
@@ -80,7 +81,7 @@ export const markets: MarketProfile[] = [
     slug: "canada",
     mapName: "Canada",
     name: "Canada",
-    flag: "🇨🇦",
+    flagCode: "ca",
     healthyConvenience: "Seasonal Meal Box",
     foodLifeExtension: "Harvest Keeper",
     climateAdaptive: "Climate Ready Hydration",

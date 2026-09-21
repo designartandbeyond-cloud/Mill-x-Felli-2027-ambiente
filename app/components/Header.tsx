@@ -12,7 +12,6 @@ export default function Header() {
         </a>
 
         <nav className="hidden gap-8 text-[13px] font-medium tracking-wide text-[#4A4944] lg:flex">
-          <a href="/#manifesto" className="transition hover:text-[#17171A]">Studio</a>
           <a href="/#trends" className="transition hover:text-[#17171A]">Trends</a>
           <a href="/#proposals" className="transition hover:text-[#17171A]">Proposals</a>
           <a href="/#markets" className="transition hover:text-[#17171A]">Markets</a>
