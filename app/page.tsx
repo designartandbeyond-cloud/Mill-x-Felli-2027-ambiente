@@ -1,3 +1,4 @@
+import ExhibitionMap from "./components/ExhibitionMap";
 import MarketExplorer from "./components/MarketExplorer";
 
 const trends = [
@@ -129,25 +130,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Manifesto */}
+      {/* Booth Preview */}
       <section id="manifesto" className="scroll-mt-20 border-b border-black/10 py-20 sm:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:px-10 lg:grid-cols-[1fr_2fr] lg:gap-20">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10">
           <p className="text-[11px] font-semibold uppercase tracking-[0.35em] text-[#8B6F5C]">
-            Studio Manifesto
+            Ambiente 2027 Booth Preview
           </p>
-          <div>
-            <p className="font-serif text-2xl leading-[1.6] sm:text-3xl sm:leading-[1.6]">
-              &ldquo;We believe the objects we live with should slow us down, not speed us up.
-              Good design doesn&apos;t shout for attention — it earns a place in daily life, and
-              keeps it.&rdquo;
-            </p>
-            <p className="mt-8 max-w-2xl text-[15px] leading-8 text-[#4A4944]">
-              Felli pairs everyday practicality with considered design. Our work responds to
-              how people actually live now — smaller homes, busier schedules, more meals eaten
-              on the move, and a growing expectation that daily objects should work harder and
-              last longer. Every proposal in this collection starts from one of those shifts,
-              adapted market by market for buyers around the world.
-            </p>
+          <h2 className="mt-4 max-w-2xl font-serif text-3xl sm:text-4xl">
+            Walk the Felli booth, zone by zone
+          </h2>
+          <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#4A4944]">
+            Seven zones, one adaptive system. Hover over any area of the booth to zoom in and
+            see its featured products.
+          </p>
+
+          <div className="mt-16">
+            <ExhibitionMap />
           </div>
         </div>
       </section>
